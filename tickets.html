@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c83f347ff1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!--Navigation Bar-->
+  <div class="fixed w-full px-2">
+    <nav class="backdrop-blur mt-4 w-full max-w-4xl mx-auto rounded-full overflow-hidden">
+      <div class="bg-slate-100 shadow  opacity-70">
+        <div class="container px-2 flex items-center justify-between">
+            <div class="flex flex-row">
+                <img src="Images/logo.png" class="w-12" alt="" />
+                <a href="#" class=" relative font-bold text-lg py-2 px-4">
+                  <p>Gather</p>
+                  <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
+                    <span class="text-[10px]">by</span> <span class="font-bold text-slate-800 text-[10px] roboto-font">Codroid</span><span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
+                  </p>
+                </a>
+              </div>
+          <div class="hidden md:inline-block">
+            <ul class="flex space-x-3">
+              <a href="/#events"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Events</a>
+              <a href="tickets.html"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Tickets</a>
+       
+              <a href="registerationform.html"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Register
+                Event</a>
+            </ul>
+          </div>
+          <div class="hidden md:inline-block">
+            <a href="/#contact"
+              class="bg-sky-700 hover:bg-sky-600 rounded-full text-white font-bold py-2 px-4 rounded transition ease-in-out duration-[0.4s]">Contact</a>
+          </div>
+
+          <!-- Add a mobile menu toggle button -->
+
+          <button class="md:hidden flex items-center px-3 py-2 rounded-full text-black  text-xl hover:text-gray-800"
+            id="mobile-menu-toggle">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add a mobile menu -->
+    <div class="backdrop-blur hidden md:hidden w-full " id="mobile-menu">
+
+      <ul class="opacity-70 bg-slate-100 flex mt-2 flex-col shadow-md rounded-3xl space-y-3 p-4">
+        <a href="/#events" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Events</a>
+        <a href="tickets.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Tickets</a>
+
+        <a href="registerationform.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Register Event</a>
+        <a href="/#contact" class="bg-sky-700 hover:bg-sky-600 w-[110px] rounded-full text-white font-bold py-2 px-4 ">Contact</a>
+      </ul>
+    </div>
+
+    <script>
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+
+    </script>
+  </div>
+    <!-- component -->
+    <section id="contact" class="flex flex-wrap justify-center items-center py-12 px-8 md:py-16 md:px-12 lg:py-20 lg:px-16 xl:py-24 xl:px-20">
+      
+        <div class="w-full lg:w-1/2 xl:w-2/3 lg:pl-12 xl:pl-20">
+          <div class="max-w-4xl m-auto">
+            <div class="text-center">
+              <h2 class="text-2xl font-bold text-gray-900 mb-3 md:text-2xl lg:text-2xl xl:text-3xl">Buy Your Tickets</h2>
+              <hr class="border-[1.5px] border-slate-500 w-1/6 mx-auto mb-10" />
+            </div>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdVHvQO4k9EsoxNxybRa5DZQdwrc2G2k6ekJg9mdARdOfi_oQ/formResponse" class="flex flex-col gap-4 lg:flex-wrap">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <div class="w-full lg:w-1/2">
+                  <input type="text"name="entry.941108929" placeholder=" First Name" class="w-full px-4 py-2 rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out" />
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <input type="text"name="entry.1580598038" placeholder="Last Name" class="w-full px-4 py-2 rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out" />
+                </div>
+              </div>
+
+              <div class="flex flex-col lg:flex-row gap-4">
+                <div class="w-full lg:w-1/2">
+                  <input type="email"name="entry.89545518" placeholder="Email" class="w-full px-4 py-2 rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out" />
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <input type="tel"name="entry.1226647466" placeholder="Phone Number" class="w-full px-4 py-2 rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out" />
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-4">
+              
+                <div class="w-full lg:w-1/2 ">
+                    <select id="event-select" name="entry.1886829497" class="w-full px-4 py-2  rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out">
+                        <option value="" disabled selected>Select your event</option>
+                        <option value="game-development">Game Development</option>
+                        <option value="figma-tutorial">Figma Tutorial</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="data-analysis">Data Analysis</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                    </select> 
+                    </div>
+                    <div class="w-full lg:w-1/2"> 
+                        <button type="button" id="toggleImage" class="w-full px-4 py-2 bg-sky-700 text-white font-bold py-2 px-4  rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out"> Access QR</button></div>
+                </div>
+             </div>
+             <div id="imageContainer" class="flex justify-center my-4 hidden">
+                <img src="Images/qr.png" alt="Sample Image" class="w-full lg:w-1/4 " />
+            </div>
+              
+               <div class="flex flex-col gap-4 mt-4 w-full">
+                
+                <div class="w-full ">
+                    <input type="text" name="entry.724319146"  placeholder="Transaction ID" class="w-full px-4 py-2 rounded-3xl border border-gray-400 hover:border-sky-700 focus:outline-none focus:border-sky-700 ease-in-out" />
+                </div>
+                <button type="submit" class="bg-sky-700 place-self-center hover:bg-sky-600 mt-4 rounded-full w-40 md:w-48 lg:w-56 xl:w-64 text-white font-bold py-2 px-4"> Submit My Ticket</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <script>
+        document.getElementById('toggleImage').addEventListener('click', function() {
+            var imageContainer = document.getElementById('imageContainer');
+            if (imageContainer.classList.contains('hidden')) {
+                imageContainer.classList.remove('hidden');
+            } else {
+                imageContainer.classList.add('hidden');
+            }
+        });
+    </script>
+
+      <!--Footer Section-->
+ 
+ 
+  <footer class="bg-white  shadow dark:bg-sky-700 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class=" flex-col sm:flex-row flex items-center sm:justify-between">
+
+            <div class="flex flex-row">
+                <img src="Images/logo.png" class="w-12 invert" alt="" />
+                <a href="#" class=" relative font-bold text-white text-lg py-2 px-4">
+                  <p>Gather</p>
+                  <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
+                    <span class="text-[10px]">by</span> <span class="font-bold text-[#fdfdfd] text-[10px] roboto-font">Codroid</span><span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
+                  </p>
+                </a>
+              </div>
+
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-semibold text-white sm:mb-0 dark:text-white">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+
+
+          <div class="flex gap-3">
+            <a href="#" class="invert text-xl"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="#" class="invert text-xl"><i class="fa-brands fa-linkedin"></i> </a>
+            <a href="#" class="invert text-xl"><i class="fa-brands fa-twitter"></i></i> </a>
+            <a href="#" class="invert text-xl text-bold"><i class="fa-brands fa-instagram"></i> </a>
+        </div>
+
+
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
+        <span class="block text-sm text-gray-500  sm:text-center dark:text-white">© 2023 <a href="#" class="hover:underline">BookItNow™</a>. All Rights Reserved.</span>
+        </div>
+</footer>
+    
+</body>
+</html>

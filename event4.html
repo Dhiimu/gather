@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookItNow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c83f347ff1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <!--Navigation Bar-->
+ <div class="fixed w-full px-2 top-0">
+    <nav class="backdrop-blur mt-4 w-full max-w-4xl mx-auto rounded-full overflow-hidden">
+      <div class="bg-slate-100 shadow  opacity-70">
+        <div class="container px-2 flex items-center justify-between">
+            <div class="flex flex-row">
+                <img src="Images/logo.png" class="w-12" alt="" />
+                <a href="#" class=" relative font-bold text-lg py-2 px-4">
+                  <p>Gather</p>
+                  <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
+                    <span class="text-[10px]">by</span> <span class="font-bold text-slate-800 text-[10px] roboto-font">Codroid</span><span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
+                  </p>
+                </a>
+              </div>
+
+          <div class="hidden md:inline-block">
+            <ul class="flex space-x-3">
+              <a href="#events"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Events</a>
+              <a href="tickets.html"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Tickets</a>
+       
+              <a href="registerationform.html"
+                class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Register
+                Event</a>
+            </ul>
+          </div>
+          <div class="hidden md:inline-block">
+            <a href="#contact"
+              class="bg-sky-700 hover:bg-sky-600 rounded-full text-white font-bold py-2 px-4 rounded transition ease-in-out duration-[0.4s]">Contact</a>
+          </div>
+
+          <!-- Add a mobile menu toggle button -->
+
+          <button class="md:hidden flex items-center px-3 py-2 rounded-full text-black  text-xl hover:text-gray-800"
+            id="mobile-menu-toggle">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add a mobile menu -->
+    <div class="backdrop-blur hidden md:hidden w-full " id="mobile-menu">
+
+      <ul class="opacity-70 bg-slate-100 flex mt-2 flex-col shadow-md rounded-3xl space-y-3 p-4">
+        <a href="#events" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Events</a>
+        <a href="tickets.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Tickets</a>
+        <a href="#contact" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Contact</a>
+        <a href="registerationform.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Register Event</a>
+        <a href="#contact" class="bg-sky-700 hover:bg-sky-600 w-[110px] rounded-full text-white font-bold py-2 px-4 ">Contact</a>
+      </ul>
+    </div>
+
+    <script>
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+
+    </script>
+  </div>
+
+
+  <div class="container mx-auto mt-10 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="md:ml-4 mx-4">
+            <h2 class="text-3xl font-bold mb-4">Web Services And API</h2>
+            <p class="text-md italic mb-4">Mastering Efficiency and Integration</p>
+            <ul class="list-disc ml-4">
+                <li><span class="font-bold">Date:</span> 2nd Aug, 2024 </li>
+                <li><span class="font-bold">Time:</span> 2 PM Onwards </li>
+                <li><span class="font-bold">City:</span> Kurukshetra, Haryana.</li>
+                <li><span class="font-bold">Venue:</span> CodroidHub</li>
+            </ul>
+            <div class="mt-4 mx-4 text-justify">
+                <p>
+                  Join us for "Web Services and API: Mastering Efficiency and Integration," a comprehensive event dedicated to enhancing your understanding and skills in web services and APIs. This session will cover best practices for creating, managing, and integrating APIs to streamline operations and boost efficiency. Learn from industry experts about the latest trends, tools, and techniques to optimize your web services. Whether you're a developer, IT professional, or business leader, this event offers valuable insights and practical knowledge to help you harness the power of APIs for seamless integration and improved performance.</p>
+            </div>
+            <ul  class="mt-4">
+              <li><span class="font-bold">Speaker:</span> Annant Dahiya </li>
+              <li>Software Developer </li>
+              <li>CodroidHub Pvt Ltd</li>
+         
+          </ul>
+        </div>
+        <div class="flex justify-center items-center rounded-xl overflow-hidden m-4 ">
+            <img src="Images/event4.jpg" alt="Music Festival" class="w-full md:h-full h-full object-cover ">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+   <!--Footer Section-->
+
+
+   <footer class="bg-white  shadow dark:bg-sky-700 ">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class=" flex-col sm:flex-row flex items-center sm:justify-between">
+
+        <div class="flex flex-row">
+            <img src="Images/logo.png" class="w-12 invert" alt="" />
+            <a href="#" class=" relative font-bold text-white text-lg py-2 px-4">
+              <p>Gather</p>
+              <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
+                <span class="text-[10px]">by</span> <span class="font-bold text-[#fdfdfd] text-[10px] roboto-font">Codroid</span><span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
+              </p>
+            </a>
+          </div>
+
+
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-semibold text-white sm:mb-0 dark:text-white">
+          <li>
+            <a href="/" class="hover:underline me-4 md:me-6">Home</a>
+          </li>
+          <li>
+            <a href="form.html" class="hover:underline me-4 md:me-6">Register Event</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+
+
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/codroidhubpvtltd" class="invert text-xl"><i class="fa-brands fa-facebook"></i> </a>
+          <a href="https://linkedin.com/company/codroidhub?originalSubdomain=in" class="invert text-xl"><i class="fa-brands fa-linkedin"></i> </a>
+          <a href="https://www.instagram.com/codroidhub/" class="invert text-xl text-bold"><i class="fa-brands fa-instagram"></i> </a>
+        </div>
+
+
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
+      <span class="block text-sm text-gray-500  sm:text-center dark:text-white">© 2023 <a href="#"
+          class="hover:underline">BookItNow™</a>. All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  </body></html>
