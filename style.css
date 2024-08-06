@@ -5,6 +5,12 @@
        font-weight: <weight>;
        font-style: normal;
      }
+
+   * {
+
+    font-family: "Poppins", sans-serif;
+    
+    }
 }
     font-family: "Roboto Slab", serif;
    font-optical-sizing: auto;

@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Services And API</title>
+    <title>Summer Music Fest 2024</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c83f347ff1.js" crossorigin="anonymous"></script>
     <style>
        
     </style>
 </head>
-<body>   <!--Navigation Bar-->
-  <div class="fixed w-full px-2 top-0">
+<body> 
+  <div class="fixed w-full px-2 z-10 top-0">
     <nav class="backdrop-blur mt-4 w-full max-w-4xl mx-auto rounded-full overflow-hidden">
       <div class="bg-slate-100 shadow  opacity-70">
         <div class="container px-2 flex items-center justify-between">
           <div class="flex flex-row">
-            <img src="Images/logo.png" class="w-12" alt="" />
+            <img src="/Images/logo.png" class="w-12" alt="" />
             <a href="#" class=" relative font-bold text-lg py-2 px-4">
-              <p>Gather</p>
-              <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
-                <span class="text-[10px]">by</span> <span class="font-bold text-slate-800 text-[10px] roboto-font">Codroid</span><span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
+              <p class="relative bottom-2 text-3xl ">Gather</p>
+              <p class=" absolute top-8  w-full left-[25px] text-xs font-bold ">
+                <span class="text-[10px]">by</span> 
+                <span class="font-bold text-slate-800 text-[10px] roboto-font">Codroid</span>
+                <span class="text-[#38b6ff] font-bold roboto-font">Hub</span>
               </p>
             </a>
           </div>
 
           <div class="hidden md:inline-block">
             <ul class="flex space-x-3">
-              <a href="#events"
+              <a href="/#events"
                 class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Events</a>
-              <a href="tickets.html"
+              <a href="/tickets.html"
                 class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Tickets</a>
        
-              <a href="registerationform.html"
+              <a href="/registerationform.html"
                 class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium transition ease-in-out duration-[0.4s]">Register
                 Event</a>
             </ul>
           </div>
           <div class="hidden md:inline-block">
-            <a href="#contact"
+            <a href="/#contact"
               class="bg-sky-700 hover:bg-sky-600 rounded-full text-white font-bold py-2 px-4 rounded transition ease-in-out duration-[0.4s]">Contact</a>
           </div>
 
@@ -57,11 +59,10 @@
     <div class="backdrop-blur hidden md:hidden w-full " id="mobile-menu">
 
       <ul class="opacity-70 bg-slate-100 flex mt-2 flex-col shadow-md rounded-3xl space-y-3 p-4">
-        <a href="#events" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Events</a>
-        <a href="tickets.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Tickets</a>
-        <a href="#contact" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Contact</a>
-        <a href="registerationform.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Register Event</a>
-        <a href="#contact" class="bg-sky-700 hover:bg-sky-600 w-[110px] rounded-full text-white font-bold py-2 px-4 ">Contact</a>
+        <a href="/#events" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Events</a>
+        <a href="/tickets.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Tickets</a>
+        <a href="/registerationform.html" class="hover:bg-slate-200 py-2 px-4 rounded-lg font-medium">Register Event</a>
+        <a href="/#contact" class="bg-sky-700 hover:bg-sky-600 w-[110px] rounded-full text-white text-center font-bold py-2 px-4 ">Contact</a>
       </ul>
     </div>
 
@@ -78,32 +79,30 @@
     </script>
   </div>
 
-
   <!--Event-->
   <div class="container mx-auto mt-10 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="md:ml-4 mx-4">
-            <h2 class="text-3xl font-bold mb-4">Web Services And API</h2>
-            <p class="text-md italic mb-4">Mastering Efficiency and Integration</p>
+            <h2 class="text-3xl font-bold mb-4">Session on Game Development</h2>
+            <p class="text-md italic mb-4">No Code APPROCH</p>
             <ul class="list-disc ml-4">
-                <li><span class="font-bold">Date:</span> 2nd Aug, 2024 </li>
+                <li><span class="font-bold">Date:</span> 9th Aug, 2024 </li>
                 <li><span class="font-bold">Time:</span> 2 PM Onwards </li>
                 <li><span class="font-bold">City:</span> Kurukshetra, Haryana.</li>
                 <li><span class="font-bold">Venue:</span> CodroidHub</li>
             </ul>
             <div class="mt-4 mx-4 text-justify">
-                <p>
-                  Join us for "Web Services and API: Mastering Efficiency and Integration," a comprehensive event dedicated to enhancing your understanding and skills in web services and APIs. This session will cover best practices for creating, managing, and integrating APIs to streamline operations and boost efficiency. Learn from industry experts about the latest trends, tools, and techniques to optimize your web services. Whether you're a developer, IT professional, or business leader, this event offers valuable insights and practical knowledge to help you harness the power of APIs for seamless integration and improved performance.</p>
+                <p>Creating a game involves designing core mechanics like controls and scoring, managing assets such as graphics and audio, integrating them into the game engine, and rigorously testing for bugs and gameplay balance. Iterative refinement based on player feedback ensures mechanics are engaging and intuitive. Asset management ensures legal compliance and cohesive visual/audio style. Integration requires seamless incorporation of all elements for a cohesive experience. Testing identifies and resolves technical issues and ensures gameplay quality. Together, these stages form a structured process aimed at delivering a polished, enjoyable game that meets both creative vision and player expectations.</p>
             </div>
             <ul  class="mt-4">
-              <li><span class="font-bold">Speaker:</span> Annant Dahiya </li>
-              <li>Software Developer </li>
+              <li><span class="font-bold">Speaker:</span> Aditya Sharma </li>
+              <li>Game Developer </li>
               <li>CodroidHub Pvt Ltd</li>
          
           </ul>
         </div>
         <div class="flex justify-center items-center rounded-xl overflow-hidden m-4 ">
-            <img src="Images/webservices.jpg" alt="Music Festival" class="w-full md:h-full h-full object-cover ">
+            <img src="/Images/game.jpg" alt="Music Festival" class="w-full md:h-full h-full object-cover ">
         </div>
     </div>
 </div>
@@ -114,7 +113,7 @@
           <hr class=" border-[1.5px] border-slate-500 w-1/6 mx-auto mb-10 ">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 m-6 mb-10 ">
             <div class="bg-white rounded-lg justify-center p-2 h-90 ">
-              <img src="Images/game.jpg" alt="Summer Music Fest" class="rounded-3xl  mb-4">
+              <img src="/Images/game.jpg" alt="Summer Music Fest" class="rounded-3xl  mb-4">
               <h3 class="text-xl font-bold mb-2">Game Development</h3>
               <p class="text-gray-900 mb-2 italic">August 9th, 2024</p>
               <p class="text-gray-900 mb-6 line-clamp-3 space-y-2">
@@ -124,11 +123,11 @@
                 CodroidHub Pvt Ltd
               </p>
     
-              <a href="event1.html"
+              <a href="/event1.html"
                 class="bg-sky-700 hover:bg-sky-600 rounded-full text-white font-bold py-2 px-4 rounded">Explore</a>
             </div>
             <div class="bg-white rounded-lg  p-2 h-90">
-              <img src="Images/webservices.jpg" alt="Food Truck Fiesta" class="rounded-3xl  mb-4">
+              <img src="/Images/webservices.jpg" alt="Food Truck Fiesta" class="rounded-3xl  mb-4">
               <h3 class="text-xl font-bold mb-2">Web Services And API</h3>
               <p class="text-gray-900 mb-2 italic">August 2nd, 2024</p>
               <p class="text-gray-900 mb-6 line-clamp-3 space-y-2">
@@ -137,11 +136,11 @@
                 Software Developer, <br>
                 CodroidHub Pvt Ltd
               </p>
-              <a href="event2.html"
+              <a href="/event2.html"
                 class="bg-sky-700 hover:bg-sky-600 mt-2 rounded-full text-white font-bold py-2 px-4 rounded">Explore</a>
             </div>
             <div class="bg-white rounded-lg  p-2 h-90 justify-between">
-              <img src="Images/figma.jpg" alt="Comedy Night Live" class="rounded-3xl  mb-4">
+              <img src="/Images/figma.jpg" alt="Comedy Night Live" class="rounded-3xl  mb-4">
               <h3 class="text-xl font-bold mb-2">Figma Unplugged</h3>
               <p class="text-gray-900 mb-2 italic">August 3rd, 2024</p>
               <p class="text-gray-900 mb-6 line-clamp-3 space-y-2">
@@ -149,10 +148,10 @@
     
                 CodroidHub Pvt Ltd
               </p>
-              <a href="event3.html"
+              <a href="/event3.html"
                 class="bg-sky-700 hover:bg-sky-600 mt-2 rounded-full text-white font-bold py-2 px-4 rounded">Explore</a>
             </div>
-           
+          
           </div>
         </div>
       
@@ -160,7 +159,9 @@
        </section>
 
 
-        <!--Footer Section-->
+       <!--FOOTER-->
+
+  <!--Footer Section-->
 
 
   <footer class="bg-white  shadow dark:bg-sky-700 ">
@@ -168,7 +169,7 @@
       <div class=" flex-col sm:flex-row flex items-center sm:justify-between">
 
         <div class="flex flex-row">
-          <img src="Images/logo.png" class="w-12 invert" alt="" />
+          <img src="/Images/logo.png" class="w-12 invert" alt="" />
           <a href="#" class=" relative font-bold text-white text-lg py-2 px-4">
             <p>Gather</p>
             <p class=" absolute top-2  w-full top-7 left-[10px] text-xs font-bold ">
@@ -177,18 +178,19 @@
           </a>
         </div>
 
+
         <ul class="flex flex-wrap items-center mb-6 text-sm font-semibold text-white sm:mb-0 dark:text-white">
           <li>
             <a href="/" class="hover:underline me-4 md:me-6">Home</a>
           </li>
           <li>
-            <a href="form.html" class="hover:underline me-4 md:me-6">Register Event</a>
+            <a href="/registerationform.html" class="hover:underline me-4 md:me-6">Register Event</a>
           </li>
           <li>
             <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
           </li>
           <li>
-            <a href="#contact" class="hover:underline">Contact</a>
+            <a href="/#contact" class="hover:underline">Contact</a>
           </li>
         </ul>
 
@@ -206,10 +208,9 @@
           class="hover:underline">BookItNow™</a>. All Rights Reserved.</span>
     </div>
   </footer>
-      
-</body>
+
 
    
-   
+    
 </body>
 </html>
